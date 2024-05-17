@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBA Public School Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <nav>
+    <h1>IBA PUBLIC SCHOOL</h1>
+    <button class="logout-button" onclick="logout()">Logout</button>
+  </nav>
+  <div class="dashboard">
+    <div class="card" onclick="navigateTo('employee.html')">
+      <img src="employee.jpg" alt="Employee">
+      <button>Employee</button>
+    </div>
+    <div class="card" onclick="navigateTo('student.html')">
+      <img src="student.jpg" alt="Student">
+      <button>Student</button>
+    </div>
+    <div class="card" onclick="navigateTo('staff.html')">
+      <img src="staff.jpg" alt="Staff">
+      <button>Staff</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 IBA Public School. All rights reserved.</p>
+  </footer>
+  <script src="dashboard.js"></script>
+</body>
+</html>
